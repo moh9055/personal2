@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>MK</title>
+
+    <style>
+      /* no display flex for mob */
+      @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .brandname{
+           letter-spacing: -11px;
+           font-size: 44px;
+           font-family: 'Philosopher', sans-serif;
+           font-weight: 500;
+           color: #F2ECFF;
+        }
+        .nav-item {
+            font-family: 'Julius Sans One', sans-serif;
+            font-size: 14px;
+            padding-left: 30px;
+            font-weight: bold;
+        }
+       .bi .bi-chevron-double-up{
+         display: none;
+       }
+       .brandname:hover{
+        color: #F2ECFF;
+
+       }
+       .nav-link{
+         color: #F2ECFF;
+       }
+       .nav-link:hover{
+         color: #54ECC4;
+       }
+       /* .forherotext{
+         width: 100%;
+         font-size: 150px;
+         text-align: center !important;
+         position: absolute;
+         top: 25%;
+         z-index: 0;
+         opacity: 1;
+         font-style: italic;
+         
+       }
+       .forheroimg{
+         z-index: 9;
+         position: relative;
+         width: 500px;
+         height: 500px;
+         border-radius: 50%;
+         content: 'okC';
+       }
+  */
+  /* box-shadow: 0px 4px 8px 0 #ACA7CB; */
+  .forheroimg{
+    border-radius: 50%;
+  }
+  .forima{
+    font-size: 82px;
+    color: #414C5F;
+  }
+  .forweb{
+    font-size: 102px;
+    color: #F3FAFF;
+    font-family: 'Julius Sans One', sans-serif;
+  }
+  .forheading{
+    font-family: 'Julius Sans One', sans-serif;
+  }
+  .forwork{
+    font-size: 58px;
+  }
+
+        @media(max-width:576px){
+            .navmob{
+                height: 100vh;
+            }
+            .navmob .navbar-nav{
+                text-align: center;
+            }
+            .navmob .navbar-nav .nav-item{
+                padding: 20px 0;
+            }
+            .navmob .navbar-nav .nav-item a{
+             border-bottom: 1px solid #F2ECFF;
+            }
+            .forima{
+              font-size: 32px;
+            }
+            .forweb{
+              font-size: 38px;
+            }
+            .forheroimg{
+              width: 80%;
+            }
+            .forherosubtext{
+              font-size: 12px;
+            }
+            .forherotop{
+              margin-top: 50px !important;
+            }
+            .forwork{
+    font-size: 42px;
+  }
+        }
+        @media(min-width:576px){
+          .forhero{
+            display: flex;
+          }
+        }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg" style="background-color: #333539; padding: 0;">
+        <div class="container">
+          <a class="navbar-brand brandname " href="#">MK</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border: none; outline: none; color: #F2ECFF;">
+            <span class=" "><i class="bi bi-chevron-double-down" style="color: #F2ECFF;"></i> <i class="bi bi-chevron-double-up" style="color: #F2ECFF; display: none;"></i></span>
+          </button>
+          <div class="collapse navbar-collapse navmob" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">FAQ</a>
+              </li>
+              <li class="nav-item pl-2">
+                <a class="nav-link" href="#">About me</a>
+
+            </li> 
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+      <!-- <div class="container mt-5" style="position: relative; display: block;">
+         <div class="">
+           <img src="IMG/patrick-t-kindt-KIcQzWym6O0-unsplash-removebg-preview.png" class="img-fluid mx-auto d-block forheroimg">
+         </div>
+         <div>
+           <h4 class="forherotext">MOHAMMAD</h4>
+         </div>
+      </div> -->
+
+
+<div  style="height: 90vh; width: 100%; background-color: #333539;">
+  <div class="container forhero">
+    <div>
+        <img src="IMG/newmale-removebg-preview.png" class="forheroimg mx-auto d-block" style="border-radius: 50%;">
+    </div>
+    <div class="my-auto mx-auto forherotop">
+      <h3 class="forima">I'm a</h3>
+      <h2 class="forweb">Web Designer</h2>
+      <h6 class="text-muted forherosubtext">Hi, my name is Mohammad. I create website for those who are ready to start their online journey.</h6>
+        <button class="btn btn-dark mt-3" style="letter-spacing: 5px;">Book a Call</button>
+    </div>
+      </div>
+</div>
+
+<div class="container">
+ <h1 class="text-center my-5 forheading">My Work</h1>
+ <h4 style="font-family: 'Cinzel', serif; color: #000;" class="forwork">01 - <a href="https://babalitr.com/" style="text-decoration: none; color: #000;">BAB-AL-ITR </a></h4>
+ <h4 style="font-family: 'Cinzel', serif; font-size: 18px; text-transform: lowercase;">More work in near future </h4>
+
+</div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+
+    <script>
+      $(document).ready(function(){
+          $(".bi-chevron-double-down").on("click",function(){
+            $(".bi-chevron-double-down").css("display","none");
+            $(".bi-chevron-double-up").css("display","block");
+          });
+          $(".bi-chevron-double-up").on("click",function(){
+            $(".bi-chevron-double-up").css("display","none");
+            $(".bi-chevron-double-down").css("display","block");
+          });
+  
+    });
+    </script>
+  </body>
+</html>
