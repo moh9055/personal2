@@ -49,27 +49,7 @@
        .nav-link:hover{
          color: #54ECC4;
        }
-       /* .forherotext{
-         width: 100%;
-         font-size: 150px;
-         text-align: center !important;
-         position: absolute;
-         top: 25%;
-         z-index: 0;
-         opacity: 1;
-         font-style: italic;
-         
-       }
-       .forheroimg{
-         z-index: 9;
-         position: relative;
-         width: 500px;
-         height: 500px;
-         border-radius: 50%;
-         content: 'okC';
-       }
-  */
-  /* box-shadow: 0px 4px 8px 0 #ACA7CB; */
+ 
   .forherohero{
     height:90vh;
   }
@@ -101,7 +81,24 @@
   .processh2{
     padding-top: 35px;
   }
-
+  .contact{
+    padding: 10px;
+    border: 5px solid #D0D3D8;
+    border-radius: 4px;
+    font-family: 'Montserrat', serif;    
+  }
+  .contact:focus{
+    border: 5px solid #D0D3D8;
+    outline: none;
+  }
+  .contact::placeholder{
+    color: #414C5F;
+  }
+  @media(max-width:992px){
+    .process{
+               width: fit-content;
+              }
+  }
         @media(max-width:576px){
             .navmob{
                 height: 100vh;
@@ -148,10 +145,21 @@
   .forspace{
     margin-top: 100px;
   }
+  .contacttop{
+    display: grid;
+    justify-content: center;
+  }
         }
+
         @media(min-width:576px){
           .forhero{
             display: flex;
+          }
+          .contact2{
+            margin-left: -12px;
+          }
+          .contact3{
+            margin-left: -10px;
           }
         }
     </style>
@@ -167,10 +175,10 @@
           <div class="collapse navbar-collapse navmob" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Projects</a>
+                <a class="nav-link" aria-current="page" href="#work">Projects</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">FAQ</a>
+                <a class="nav-link" href="#faq">FAQ</a>
               </li>
               <li class="nav-item pl-2">
                 <a class="nav-link" href="#">About me</a>
@@ -192,21 +200,21 @@
       </div> -->
 
 
-<div  style="width: 100%; background-color: #333539;" class="forherohero">
+<div  style="width: 100%; background-color: #333539;" class="forherohero" >
   <div class="container forhero">
     <div>
         <img src="IMG/newmale-removebg-preview.png" class="forheroimg mx-auto d-block" style="border-radius: 50%;">
     </div>
-    <div class="my-auto mx-auto forherotop">
+    <div class="my-auto mx-auto forherotop" >
       <h3 class="forima">I'm a</h3>
       <h2 class="forweb">Web Developer</h2>
-      <h6 class="text-muted forherosubtext">Hi, this is Mohammad. I develop website for those who are ready to start their online journey.</h6>
+      <h6 class="text-muted forherosubtext">Hi, this is Mohammad Katwara. I like to help the business grow by developing website for thier business. A website that deliver message about what they do, who they are.</h6>
         <button class="btn btn-dark mt-3" style="letter-spacing: 5px;">Book a Call</button>
     </div>
       </div>
 </div>
 
-<div class="container my-5">
+<div class="container my-5" id="work">
  <h1 class="text-center my-5 forheading">My Work</h1>
  <h4 style="font-family: 'Cinzel', serif; color: #000;" class="forwork">01 - <a href="https://babalitr.com/" style="text-decoration: none; color: #000;">BAB-AL-ITR </a>
  </h4>
@@ -229,7 +237,7 @@
 
  <div style="height: 100px; width: 100px; background: #F3FAFF; border-radius: 50%; border: 1px solid;">
 
-<div class="process">
+<div  class="process">
   <h5 style="font-family: 'Julius Sans One', sans-serif; margin-left: 120px; width: 100%;" class="processh"> What the client want to achieve or problem want to solve from having website</h5>
 </div>
 </div>
@@ -247,7 +255,7 @@
  
   <div style="height: 100px; width: 100px; background: #F3FAFF; border-radius: 50%; border: 1px solid;">
  
- <div   class="process">
+ <div  class="process">
    <h5 style="font-family: 'Julius Sans One', sans-serif; margin-left: 120px;  width: 100%;" class="processh2">Sketching the design of website</h5>
  </div>
  </div>
@@ -265,7 +273,7 @@
  
   <div style="height: 100px; width: 100px; background: #F3FAFF; border-radius: 50%; border: 1px solid;">
  
- <div   class="process">
+ <div  class="process">
    <h5 style="font-family: 'Julius Sans One', sans-serif; margin-left: 120px;  width: 100%;" class="processh"> devloping two version of website & asking client to approved one. </h5>
  </div>
  </div>
@@ -282,7 +290,7 @@
   
    <div style="height: 100px; width: 100px; background: #F3FAFF; border-radius: 50%; border: 1px solid;" >
   
-  <div class="process">
+  <div  class="process">
     <h5 style="font-family: 'Julius Sans One', sans-serif; margin-left: 120px;  width: 100%;" class="processh"> finalizing the design & copy writing with client and then launch. </h5>
   </div>
   </div>
@@ -296,7 +304,7 @@
 
 
 
-<div style="background: #333539; color: #F3FAFF;">
+<div style="background: #333539; color: #F3FAFF;" id="faq">
 <div class="container py-3 my-5">
   <h3 style="font-family: 'Julius Sans One', serif; text-align: center;" class="my-5">Frequently asked question</h3>
 <br>
@@ -341,6 +349,27 @@
         <div class="d-flex mb-2">
           <i class="bi bi-dot"></i><h5 style="font-weight: 400; font-family: 'Montserrat', sans-serif;">Having a better website can help you to beat your competition.</h5>
           </div>
+            <div class="d-flex mb-2">
+          <i class="bi bi-dot"></i><h5 style="font-weight: 400; font-family: 'Montserrat', sans-serif;">Having a website will give you insight about your customer  behaviour.</h5>
+          </div>
+</div>
+
+<div style="background: #333539; color: #F3FAFF;">
+  <div class="container">
+    <h3 style="font-family: 'Julius Sans One', serif; text-align: center;" class="mt-5 pt-5 pb-3">Free demo</h3>
+    <h6 style="font-family: 'Montserrat', serif; " class="py-3">Intrested in having a demo for you business before working out with me? </h6>
+    <div class="pb-3 contacttop">
+      <input type="text" placeholder="Your first name" class="contact mb-3">
+      <input type="email" placeholder="Your email address" class="contact mb-3 contact2" style="">
+      <button class="btn btn-dark contact3" style="padding: 10px; font-family: 'Montserrat', serif; letter-spacing: 2px;  margin-bottom:2px; border: 5px solid #D0D3D8;">Intrested</button>
+    </div>
+    <h6 style="font-family: 'Montserrat', serif; " class="py-3">I will contact you as soon as possible to know about your business and to deliver a free demo to you.</h6>
+    <h6 style="font-family: 'Montserrat', serif; " class="pb-3">Available on instagram : <a href="https://www.instagram.com/mr.mohammad_02/" style="color: #F3FAFF;" target="_blank"><i class="bi bi-instagram"></i> mr.mohammad_02 </a></h6>
+<br>
+    <h1 class="brandname" style="text-align: center;">MK</h1>
+    <h6 style="font-family: 'Montserrat', serif; ;" class="text-center">@Copyright 2021. MK Developer</h6>
+  <br>
+  </div>
 </div>
     <!-- Optional JavaScript; choose one of the two! -->
 
